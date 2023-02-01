@@ -10,6 +10,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Projects from './components/pages/Projects'
 import Company from './components/pages/Company'
+import Project from './components/pages/Project'
 
 
 
@@ -28,6 +29,8 @@ function App() {
               <Route path='/projects' element= {<Projects/>}> </Route>
               <Route path='/company' element= {<Company/>}> </Route>
               <Route path='/new-project' element= {<NewProject/>}> </Route>
+              <Route path='/project/:id' element= {<Project/>}> </Route>
+
               
         </Routes>      
        
