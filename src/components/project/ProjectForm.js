@@ -6,6 +6,7 @@ import styles from './ProjectForm.module.css'
 import css from '../../index.css'
 import {useEffect, useState} from 'react'
 
+
 function ProjectForm({handleSubmit, btnText, projectData}){
 
     const [categories, setCategories] = useState([])
@@ -23,7 +24,8 @@ function ProjectForm({handleSubmit, btnText, projectData}){
       },[])
       const submit =(e) =>{
         e.preventDefault()
-       
+        
+  
         handleSubmit(project)
       }
       function handleChange(e){

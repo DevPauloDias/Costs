@@ -2,7 +2,7 @@
 import ProjectForm from '../project/ProjectForm'
 import styles from './NewProject.module.css'
 import css from '../../index.css'
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 function NewProject(){
 
@@ -22,9 +22,11 @@ function NewProject(){
 
         }).then(resp => resp.json())
         .then((data)=> {console.log(data)
+            const message= "Projeto criado com sucesso!"
             //redirect
             // history.push('/projects', {message: 'Projeto criado com sucesso!})
-            navigate('/');
+        
+           navigate('/projects',{state:{ message: message}});
         })
         .catch(err => console.log(err))
 
