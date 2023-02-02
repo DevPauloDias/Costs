@@ -7,20 +7,48 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 6450,
+      "services": [
+        {
+          "name": "Estruturar o banco de dados",
+          "cost": "6450",
+          "description": "Fazer o diagrama de entidade e relacionamento",
+          "id": "2f9d9ec9-998f-4f9a-b239-fe84516bbfb2"
+        }
+      ],
       "id": 1
     },
     {
-      "name": "backend",
-      "budget": "2500",
+      "name": "backend Developer",
+      "budget": "3200",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
-      "id": 6
+      "cost": 200,
+      "services": [
+        {
+          "name": "Estruturar o banco de dados",
+          "cost": "500",
+          "description": "Criar os diagramas de entidade e relacionamento, e implementar as tabelas do banco",
+          "id": "126a3591-745c-4a34-80c2-4d4524574722"
+        }
+      ],
+      "id": 6,
+      "service": [
+        {
+          "name": "Estruturar o banco de dados",
+          "cost": "500",
+          "description": "Criar os diagramas de entidade e relacionamento, e implementar as tabelas do banco",
+          "id": "126a3591-745c-4a34-80c2-4d4524574722"
+        },
+        {
+          "name": "Testes",
+          "cost": "650",
+          "description": "Realizar t estes unitários e de intregração",
+          "id": "8d680115-2a02-46bb-81ab-c4e532aafeab"
+        }
+      ]
     },
     {
       "name": "Programador",
